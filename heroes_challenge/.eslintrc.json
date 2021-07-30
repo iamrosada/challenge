@@ -35,13 +35,13 @@
         "aspects": ["noHref", "invalidHref", "preferButton"]
       }
     ],
-    "settings": {
+    /*  "settings": {
       "import/resolver": {
         "node": {
           "paths": ["src"]
         }
       }
-    },
+    }, */
     "prettier/prettier": "error",
     "camelcase": "off",
     "arrow-body-style": "off",
