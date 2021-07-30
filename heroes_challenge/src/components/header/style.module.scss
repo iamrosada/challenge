@@ -1,0 +1,21 @@
+.header {
+  height: 5rem;
+
+  background: var(--color-header-500);
+  color: var(--color-white);
+
+  border-bottom: 2px solid var(--color-yellow-500);
+  margin-bottom: 2.3rem;
+}
+.headerContent {
+  max-width: 1120px;
+  height: 5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 23px;
+  }
+}
