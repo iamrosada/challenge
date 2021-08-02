@@ -10,17 +10,22 @@
 
   height: 20.5rem;
 }
+.main {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: none;
+}
 
 .card {
   margin-top: 8rem;
 }
 .cardContent {
   max-width: 1120px;
-
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
-  /*  align-items: center; */
 
   flex-direction: column;
   strong {
