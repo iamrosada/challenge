@@ -34,6 +34,7 @@ body {
 
   --color-cyan: #61dafb;
   --color-yellow-500: #eba417;
+  --color-yellow-600: #aa7814;
 }
 body,
 input,
@@ -44,6 +45,9 @@ button {
 }
 button {
   cursor: pointer;
+}
+input {
+  border: none;
 }
 a {
   color: inherit;
