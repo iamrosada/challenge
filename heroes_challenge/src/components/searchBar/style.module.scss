@@ -1,0 +1,28 @@
+.formInput {
+  max-width: 900px;
+  display: flex;
+  input {
+    height: 60px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 600px;
+    margin-bottom: 18px;
+    & ::placeholder {
+      color: #a8a8b3;
+    }
+  }
+  button {
+    width: 180px;
+    height: 60px;
+    background: #04d361;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    &:hover {
+      background: #1aa056;
+    }
+  }
+}
