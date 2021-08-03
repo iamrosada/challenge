@@ -6,10 +6,9 @@ import styles from './style.module.scss';
 function SearchResults(props) {
   const { superheroData = [] } = props;
 
-  console.log('superheroData', superheroData);
   return (
     <div className={styles.CardFlex}>
-      {superheroData.map(superhero => (
+      {superheroData.map((superhero) => (
         <SearchResultItem data={superhero} />
       ))}
     </div>

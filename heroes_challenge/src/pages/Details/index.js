@@ -21,10 +21,9 @@ class Details extends Component {
     const url = `https://www.superheroapi.com/api.php/929494281231839/${id}`;
 
     fetch(url)
-      .then(response => response.json())
-      .then(json => {
+      .then((response) => response.json())
+      .then((json) => {
         this.setState({ DetailSuperHero: json });
-        console.log(json);
       });
   }
 

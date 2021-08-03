@@ -2,7 +2,7 @@
 
 ### 🎲 COMO O HEROES_CHALLENGE TRABALHA! [🤔](https://static.xx.fbcdn.net/images/emoji.php/v9/t34/1/16/1f914.png)
 
-HEROES_CHALLENGE - É uma aplicação que consome a api do https://www.superheroapi.com/api.php/ está é uma api que contem muitos heróis de banda desenhada, e lista todos esses heróis com base a pesquisa do usuário. e também da a opção ao usuário de criar uma lista de seus heróis favoritos.
+HEROES_CHALLENGE - É uma aplicação que consome a api do https://www.superheroapi.com/api.php/ está é uma api que contem muitos heróis de banda desenhada. Neste projeto todos esses heróis são listados com base a pesquisa do usuário. e também da a opção ao usuário de criar uma lista de seus heróis favoritos.
 
 ### 🛠 Tecnologias
 

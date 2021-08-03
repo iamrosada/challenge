@@ -6,7 +6,6 @@ import styles from './style.module.scss';
 function SearchResultItem(props) {
   const { data } = props;
 
-  console.log('data', data);
   return (
     <div className={styles.allCard}>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

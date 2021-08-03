@@ -13,7 +13,7 @@ export default function Favorites() {
   }, []);
 
   function handleRemove(id) {
-    const newFavorites = favorites.filter(favorite => favorite.id !== id);
+    const newFavorites = favorites.filter((favorite) => favorite.id !== id);
     localStorage.setItem('favorite', JSON.stringify(newFavorites));
     setFavorites(newFavorites);
   }
@@ -21,7 +21,7 @@ export default function Favorites() {
     <section className={styles.FavorContainer}>
       <div className={styles.FavorContent}>
         <span>FAVORITES PAGE</span>
-        {favorites.map(favorite => (
+        {favorites.map((favorite) => (
           <Card favorite={favorite} handleRemove={handleRemove} />
         ))}
       </div>

@@ -15,7 +15,6 @@ export default function Home() {
       `https://www.superheroapi.com/api.php/929494281231839/search/${searchText}`
     );
     const data = await response.json();
-    console.log('searchSuperHeroes -> data', data);
 
     setSuperheroData(data.results);
   }
