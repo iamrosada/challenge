@@ -32,7 +32,7 @@ $ cd heroes_challenge
 $ npm install ou simplesmente yarn
 
 # Execute a aplicação em modo de desenvolvimento
-$ yarn build
+yarn start
 
 ```
 
