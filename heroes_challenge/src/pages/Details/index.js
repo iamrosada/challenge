@@ -3,14 +3,16 @@
 /* eslint-disable  react/destructuring-assignment */
 
 import React, { Component } from 'react';
+
 import styles from './style.module.scss';
 
 class Details extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      DetailSuperHero: [],
+      DetailSuperHero: {},
     };
+    this.handleHero = this.handleHero.bind(this);
   }
 
   componentDidMount() {
@@ -26,6 +28,25 @@ class Details extends Component {
       });
   }
 
+  handleHero() {
+    let storageFav = localStorage.getItem('favorite');
+
+    if (storageFav) {
+      storageFav = JSON.parse(storageFav);
+      localStorage.setItem(
+        'favorite',
+        JSON.stringify([...storageFav, this.state.DetailSuperHero])
+      );
+    } else {
+      localStorage.setItem(
+        'favorite',
+        JSON.stringify([this.state.DetailSuperHero])
+      );
+    }
+
+    window.location.href = '/favorite';
+  }
+
   render() {
     return (
       <section className={styles.DetailsPage}>
@@ -38,7 +59,9 @@ class Details extends Component {
               src={this.state.DetailSuperHero.image?.url}
               alt="hero_details"
             />
-            <button type="button">Adicionar a lista de favoritos</button>
+            <button type="submit" onClick={() => this.handleHero()}>
+              Adicionar a lista de favoritos
+            </button>
           </div>
 
           <div className={styles.about}>
@@ -46,10 +69,10 @@ class Details extends Component {
 
             <ul>
               <li>
-                Full-Name:{this.state.DetailSuperHero.biography?.['full-name']}
+                Full-Name: {this.state.DetailSuperHero.biography?.['full-name']}
               </li>
               <li>
-                Alter-Egos:
+                Alter-Egos:{' '}
                 {this.state.DetailSuperHero.biography?.['alter-egos']}
               </li>
 
@@ -57,11 +80,11 @@ class Details extends Component {
                 Aliases: {this.state.DetailSuperHero.biography?.aliases[1]}
               </li>
               <li>
-                Place-of-Birth:
+                Place-of-Birth:{' '}
                 {this.state.DetailSuperHero.biography?.['place-of-birth']}
               </li>
               <li>
-                First-Appearance:
+                First-Appearance:{' '}
                 {this.state.DetailSuperHero.biography?.['first-appearance']}
               </li>
               <li>
