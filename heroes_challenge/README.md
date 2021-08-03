@@ -40,11 +40,6 @@ yarn start
 
 ### Autor
 
----
-
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/59142372?v=4" width="100px;" alt=""/>
- <br />
-
 Feito com ❤️ por Luis de Água Rosada 👋🏽 Entre em contato!
 
 
