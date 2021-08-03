@@ -1,17 +1,21 @@
+/* eslint-disable react/prop-types  */
 import React from 'react';
-import marvel from '../../assets/marvel.jpg';
+
 import styles from './style.module.scss';
 
-export default function Card() {
+export default function Card({ handleRemove, favorite }) {
   return (
     <section className={styles.allCard}>
       <div>
-        <img src={marvel} alt="hero" />
+        <img src={favorite.image.url} alt="hero" />
         <div className={styles.removerHero}>
-          <span>ROSADA</span>
-          <button type="button">Remover</button>
+          <span>{favorite.name}</span>
+          <button type="button" onClick={() => handleRemove(favorite.id)}>
+            Remover
+          </button>
         </div>
       </div>
     </section>
   );
 }
+/* eslint-enable react/prop-types */
