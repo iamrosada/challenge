@@ -12,7 +12,7 @@ export default function Home() {
 
   async function searchSuperHeroes() {
     const response = await fetch(
-      `https://www.superheroapi.com/api.php/10219177700206566/search/${searchText}`
+      `https://www.superheroapi.com/api.php/929494281231839/search/${searchText}`
     );
     const data = await response.json();
     console.log('searchSuperHeroes -> data', data);

@@ -10,6 +10,11 @@ export default function Header() {
         <Link to="/">
           <span>MY HEROES</span>
         </Link>
+        <nav>
+          <Link to="/favorite">
+            <span>Favorite</span>
+          </Link>
+        </nav>
       </div>
     </header>
   );

@@ -37,7 +37,7 @@
   }
   button {
     padding: 5px;
-    background: red;
+    background: var(--color-red);
     border: none;
     height: 2rem;
     border-radius: 4px;
@@ -45,7 +45,7 @@
 
     margin: 10px;
     &:hover {
-      background: rgb(139, 29, 29);
+      background: var(--color-redbac);
     }
   }
 }

@@ -18,7 +18,7 @@ class Details extends Component {
   componentDidMount() {
     const { id } = this.props.match.params;
 
-    const url = `https://www.superheroapi.com/api.php/10219177700206566/${id}`;
+    const url = `https://www.superheroapi.com/api.php/929494281231839/${id}`;
 
     fetch(url)
       .then(response => response.json())
@@ -93,6 +93,12 @@ class Details extends Component {
               <li>
                 Alignment: {this.state.DetailSuperHero.biography?.alignment}
               </li>
+              <li>
+                intelligence:{' '}
+                {this.state.DetailSuperHero.powerstats?.intelligence}
+              </li>
+              <li>power: {this.state.DetailSuperHero.powerstats?.power}</li>
+              <li>occupation: {this.state.DetailSuperHero.work?.occupation}</li>
             </ul>
           </div>
         </div>

@@ -4,10 +4,12 @@
 
   div {
     display: flex;
+
     flex-direction: column;
     background: var(--color-yellow-500);
     border-radius: 8px 8px 25px;
     margin-right: 2.5rem;
+
     transition: transform 250ms;
     &:hover {
       transform: translateY(-10px);
@@ -19,9 +21,6 @@
       max-width: 25rem;
       margin-bottom: 5px;
       border-radius: 8px 8px 0 0px;
-
-      &:hover {
-      }
     }
     span {
       color: var(--color-white);
