@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useEffect, useState } from 'react';
 import Card from '../../components/card';
 import styles from './style.module.scss';

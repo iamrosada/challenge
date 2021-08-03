@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types  */
 /* eslint-disable  react/no-unused-state */
 /* eslint-disable  react/destructuring-assignment */
+/* eslint-disable prettier/prettier */
 
 import React, { Component } from 'react';
 
@@ -68,36 +69,46 @@ class Details extends Component {
 
             <ul>
               <li>
-                Full-Name: {this.state.DetailSuperHero.biography?.['full-name']}
+                <div>Full-Name:</div>{' '}
+                {this.state.DetailSuperHero.biography?.['full-name']}
               </li>
               <li>
-                Alter-Egos:{' '}
+                <div>Alter-Egos:</div>{' '}
                 {this.state.DetailSuperHero.biography?.['alter-egos']}
               </li>
 
               <li>
-                Aliases: {this.state.DetailSuperHero.biography?.aliases[1]}
+                <div>Aliases:</div>
+                {this.state.DetailSuperHero.biography?.aliases[1]}
               </li>
               <li>
-                Place-of-Birth:{' '}
+                <div>Place-of-Birth:</div>{' '}
                 {this.state.DetailSuperHero.biography?.['place-of-birth']}
               </li>
               <li>
-                First-Appearance:{' '}
+                <div>First-Appearance:</div>{' '}
                 {this.state.DetailSuperHero.biography?.['first-appearance']}
               </li>
               <li>
-                Publisher: {this.state.DetailSuperHero.biography?.publisher}
+                <div>Publisher:</div>
+                {this.state.DetailSuperHero.biography?.publisher}
               </li>
               <li>
-                Alignment: {this.state.DetailSuperHero.biography?.alignment}
+                <div>Alignment:</div>
+                {this.state.DetailSuperHero.biography?.alignment}
               </li>
               <li>
-                intelligence:{' '}
+                <div>intelligence:</div>{' '}
                 {this.state.DetailSuperHero.powerstats?.intelligence}
               </li>
-              <li>power: {this.state.DetailSuperHero.powerstats?.power}</li>
-              <li>occupation: {this.state.DetailSuperHero.work?.occupation}</li>
+              <li>
+                <div>power:</div>
+                {this.state.DetailSuperHero.powerstats?.power}
+              </li>
+              <li>
+                <div>occupation:</div>{' '}
+                {this.state.DetailSuperHero.work?.occupation}
+              </li>
             </ul>
           </div>
         </div>

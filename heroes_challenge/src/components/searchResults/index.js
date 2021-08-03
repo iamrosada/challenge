@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+/* eslint-disable prettier/prettier */
+
 import React from 'react';
 import SearchResultItem from '../searchResultItem';
 import styles from './style.module.scss';
